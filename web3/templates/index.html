@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CriptAmo: 🔐 Cryptographic Wallet Forge</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/lock-2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="dark">
+    <header>
+        <h1><span class="logo">🧬</span> CriptAmo: Cryptographic Wallet Forge</h1>
+        <p class="subtitle">Generá tu identidad descentralizada con seguridad cuántica.</p>
+    </header>
+
+    <main>
+        <button id="generate" class="glow-btn">🔁 Generar Wallet</button>
+
+        <div id="loading" class="loading hidden">⏳ Generando claves cuánticas...</div>
+
+        <div id="result" class="result hidden">
+            <div class="columns">
+                <div class="left">
+                    <h2>🔑 Clave Privada</h2>
+                    <pre id="privateKey" class="codebox">...</pre>
+                    <button class="copy-btn" onclick="copyText('privateKey')">📋 Copiar clave</button>
+                </div>
+                <div class="right">
+                    <h2>🌐 Direcciones Generadas</h2>
+                    <ul id="addressList"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>❤️ Donaciones aceptadas - Gracias por apoyar CriptAmo!</p>
+        <div id="donations" class="donations"></div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
