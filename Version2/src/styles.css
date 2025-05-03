@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+h3, p {
+  color: #00ff00;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: #000000;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+input, .input-field {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #00ff00;
+}
+
+.error {
+  color: #ff0000;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.address-name {
+  font-weight: bold;
+}
+
+.address, .donation-address {
+  color: #00ff00;
+}
