@@ -1,68 +1,55 @@
 <p align="center">
-  <img src="criptamo.png" width="180" alt="CriptAmo Logo">
+  <img src="criptamo.png" width="180" alt="CriptAmo">
 </p>
 
-# 💸 CriptAmo
+# CriptAmo
 
-Una herramienta de generación de direcciones cripto rápida, visual y multiplataforma.
+Herramienta experimental de DesarrollAMO para **generar y visualizar claves/direcciones de distintas criptomonedas**.
 
----
+## Estado
 
-## 🚀 Características principales
+**Histórico / experimental.** Se conserva por su valor técnico y de aprendizaje. No ha sido auditado como wallet, custodia ni software financiero de producción.
 
-- 🔐 Generación automática de:
-  - Claves privadas (hexadecimal)
-  - Direcciones para: Bitcoin, Ethereum, Dogecoin, Litecoin, Dash, BitcoinCash, Zcash, BNB, Clams
-- 🧠 Derivación desde claves privadas personalizadas
-- 🎨 Interfaz gráfica clara, moderna y en modo oscuro (Tkinter)
-- ☕ Botón de donaciones dentro de la app (¡Criptocafecito!)
+## Qué contiene
 
----
+- variantes históricas `CriptAmo.py`, `CriptAmo1.py` y `CriptAmo2.py`;
+- derivación/generación para varias redes;
+- interfaz Tkinter;
+- experimentos adicionales en `Version2/` y `web3/`;
+- `requirements.txt`;
+- licencia MIT incluida en el repositorio.
 
-## 🖼️ Vista previa
-
-![UI Preview](https://via.placeholder.com/700x540.png?text=CriptAmo+UI)
-
----
-
-## 📦 Instalación rápida / Requisitos / Donaciones / Autor / Licencia
+## Instalación histórica
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/El3imm/CriptAmo.git
+git clone https://github.com/amoedo7/CriptAmo.git
 cd CriptAmo
-
-# Instalar dependencias
 pip install -r requirements.txt
-
-# Ejecutar la app
 python CriptAmo.py
+```
 
+En Linux puede ser necesario instalar Tkinter mediante el gestor de paquetes de la distribución.
 
-# Requisitos
-Python 3.8 o superior
+## Seguridad crítica
 
-Paquetes (desde requirements.txt):
-ecdsa==0.18.0
-base58==2.1.1
+CriptAmo trabaja con material criptográfico. Por eso:
 
-# En Linux puede que necesites instalar Tkinter:
-sudo apt install python3-tk
+- **nunca** uses claves privadas que protejan fondos reales para probar el proyecto;
+- no pegues seeds, frases mnemónicas ni claves privadas reales en Issues, logs o capturas;
+- no asumas que la generación aleatoria o derivación implementada aquí ha sido auditada criptográficamente;
+- prueba únicamente con claves desechables y redes/test wallets controladas por vos;
+- una dirección pública puede compartirse; una clave privada o seed no.
 
+Este repositorio no recupera fondos ni otorga acceso legítimo a wallets de terceros.
 
-# ❤️ Donaciones (¡gracias!)
-Bitcoin: 17jrtsZ245v7M5f8Vv6ZdR3NowasZ9hELv
-Ethereum: 0x548702ecce06cbc6991c86de390bc008459cdf5a
-Dogecoin: DBsxS8VfMVpPt5qjEW68BBCyh5KAsCNYec
-...y más dentro de la app 😎
+## Relación con DesarrollAMO
 
+CriptAmo representa una etapa de experimentación con criptografía y apps de escritorio. No es actualmente una pieza central de DAMO/IAMO, pero se conserva como proyecto AMO independiente y como referencia técnica.
 
-# 👨‍💻 Autor
-El3imm — Explorando la frontera entre código y criptografía.
-GitHub: https://github.com/El3imm
-(Twitter próximamente...)
+## Versionado
 
+Las múltiples variantes históricas se mantienen para preservar evolución. Si se retoma el proyecto, el primer trabajo debería ser elegir una única entrada canónica, agregar tests deterministas y separar claramente librería, UI y soporte de redes.
 
-# 📄 Licencia
-Este proyecto está bajo la Licencia MIT.
-Ver el archivo LICENSE para más información.
+---
+
+**DesarrollAMO** · tus claves privadas deben permanecer bajo tu control.
