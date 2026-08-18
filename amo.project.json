@@ -1,0 +1,14 @@
+{
+  "schema": "desarrollamo.project.v1",
+  "repository": "amoedo7/CriptAmo",
+  "name": "CriptAmo",
+  "ecosystem": "DesarrollAMO",
+  "type": "crypto-experiment",
+  "lifecycle": "historical-experiment",
+  "visibility": "public",
+  "source_of_truth": "historical-snapshot",
+  "production_url": null,
+  "related": ["amoedo7/nada", "amoedo7/Frases"],
+  "reviewed_at": "2026-08-18",
+  "notes": ["Experimental cryptographic tooling; not an audited wallet.", "Never use real private keys or seed phrases for testing."]
+}
